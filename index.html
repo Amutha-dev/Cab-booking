@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Taxi Services</title>
+
+    <!--description-->
+    <meta name="description" content="Book a fast and safe cab online. Get instant booking, low prices, and 24/7 taxi service.">
+
+    <!--open graph-->
+
+    <meta property="og:title" content="Fast Taxi Services">
+    <meta property="og:description" content="fast and safe taxi booking 24/7">
+    <meta property="og:image" content="cab.png">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta  name="viewport" content="width=device-width , initial-scale=1.0">
+
+
+     
+</head>
+<body>
+    <header class="main-header">
+        <img src="images/logo.png" alt="Cab Booking Logo" class="logo">
+    
+        <nav aria-label="main navigation">
+        
+    <ul>
+
+       <li> <a href="#home">Home</a></li>
+       <li>  <a href="#detail">Car Deatails</a></li>
+       <li>  <a href="#service">Service</a></li>
+       <li> <a href="#about">About Us</a></li>
+       <li><a href="#book">Booking</a></li> 
+       <li> <a href="#contact">Contact Us</a></li>
+        
+    </ul>
+</nav>
+
+
+</header>
+
+
+<main>
+    <!--home page-->
+
+   <!-- <img src="car.jpeg" width="400">-->
+   <section aria-labelledby="home" class="home">
+    <img src="images/home.png" alt="Cab Booking Logo" class="home-img">
+
+
+    <h1>Fast Taxi Service</h1>
+    <br>
+    
+    <p>Welcome to <b>Fast Taxi Service</b> — your trusted travel partner.<br>
+        Book reliable, fast, and affordable cabs anytime.<br>
+        Enjoy smooth rides, professional drivers, and instant booking.<br>
+        Your journey starts with just one click!<br>___  ___</p>
+
+   </section>
+
+   <hr> 
+
+<!--Car details section-->
+
+
+   <section class="table-section">
+    <h2 id="detail">Car Details</h2>
+   
+    <table border="1" cellpadding="8" cellspacing="0" class="table">
+       <tr>
+           <th>Image of car</th>
+           <th>Cab Type</th>
+           <th>Rate per Km</th>
+           <th>Seats</th>
+       </tr>
+       <tr>
+           <td><img src="images/car1.png" width="100"></td>
+           <td>Sedan</td>
+           <td>₹15</td>
+           <td>4</td>
+       </tr>
+       <tr>
+           <td><img src="images/car2.png" width="100"></td>
+           <td>SUV</td>
+           <td>₹20</td>
+           <td>6</td>
+       </tr>
+       <tr>
+           <td><img src="images/car3.png" width="100"></td>
+           <td>Bike Taxi</td>
+           <td>₹5</td>
+           <td>1</td>
+       </tr>
+    </table>
+    </section>
+
+    
+
+<!--about us section-->
+    <section class="about">
+        <h2 id="about">About Us</h2>     
+
+
+<div class="about-container">
+    
+    <div class="about-text">
+        
+        <p>We are a trusted cab service providing safe and affordable rides across the city.<br>
+            Our mission is to make transportation fast, reachable, and reliable.
+        </p>
+
+        <ul>
+            <li>24/7 Service</li>
+            <li>Trusted Drivers</li>
+            <li>Affordable Pricing</li>
+            <li>Safe & Comfortable Rides</li>
+        </ul>
+    </div>
+
+    <div class="about-image">
+         <img src="images/about.png" alt="About Image">
+        </div>
+
+        </div>
+
+     </section>
+
+        
+
+        <!--service section-->
+        <section aria-labelledby="service" class="card-section">
+            <h2 id="service">Our Services</h2>
+
+           <div class="card-container">
+
+            <div class="card">
+                <h3>City Rides</h3>
+                <p>Our city ride service is designed for your daily travel needs.
+                    Whether you are going to the office, college, shopping, or visiting friends,
+                    our cabs are always available at affordable prices.
+                    We ensure clean vehicles, polite drivers, and safe journeys every time.
+                </p>
+            </div>
+            
+            <div class="card">
+                <h3>Outstation Travel</h3>
+                <p>Travel long distances with comfort and confidence using our outstation cab service.
+                    We provide well-maintained cars suitable for family trips and group travel.
+                    Enjoy flexible travel plans, transparent pricing, and experienced drivers.
+                    free airport commute.
+                    
+                </p>
+            </div>
+            
+            <div class="card">
+                <h3>Airport Pickup & Drop</h3>
+                <p>Never miss a flight with our reliable airport pickup and drop service.
+                    Our drivers arrive on time and help with luggage for a smooth experience.
+                    We track flight timings to avoid delays and waiting charges.
+                    Enjoy fixed pricing, easy booking, and a stress-free airport commute.
+                </p>
+            </div>
+        </div>  
+        </section>
+
+        
+
+        <!--Booking section-->
+
+
+    <section aria-labelledby="book" class="book">
+        <h2 id="book">Booking</h2>
+    <br>
+    
+    <form class="booking-section">
+        <fieldset>
+            <legend>Pickup & Drop-Date & Time</legend>
+        <div class="form-row">   
+        <label for="pickup">Pickup Location:</label><br>
+        <input type="text" name="pickup"  required>
+    </div> 
+        <br><br>
+        <div class="form-row"> 
+        <label for="drop">Drop Location:</label><br>
+
+        <input type="text" name="drop"  required>
+        </div>
+        <br><br>
+
+    
+        <div class="form-row"> 
+        <label for="Date">Date:</label><br>
+        <input type="date" name="date"  required>
+        </div>
+        <br><br>
+        <div class="form-row"> 
+        <label for="pickup">Time:</label><br>
+        <input type="time" name="time" required>
+        </div>
+        <br><br>
+        <div class="form-row"> 
+        <label for="cab-type" >Cab Type:</label> 
+            <br>
+        <select name="cab" required>
+            <option>Mini</option>
+            <option>Sedan</option>
+            <option>SUV</option>
+            <option>Bike Taxi</option>
+        </select>
+        </div>
+
+        <br><br>
+    </fieldset>
+    <fieldset>
+
+    <legend>passenger Details</legend>
+<div class="form-row"> 
+        <label>Passenger Name:</label><br>
+        <input type="text" name="name"  required>
+        </div>
+        <br><br>
+        <div class="form-row"> 
+        <label>Mobile Number:</label><br>
+        <input type="tel" name="number" required>
+        </div>
+        <br><br>
+    </fieldset>
+        <button type="submit">Book Now</button>
+   
+ </form>
+ </section>
+ 
+ 
+
+<!--contact section-->
+
+<section class="contact">
+ <h2 id="contact">Contact Us</h2>
+ <p>amutha2355@gmail.com</p>
+ <p>764-434-8737</p>
+ <p>Location:Coimbatore.</p>
+</section>
+
+<hr>
+
+</main>
+
+<!--footer-->
+<footer>
+<p>© 2025 Cab Booking Service. All rights reserved.</p>
+<nav>
+    <a href="#">Terms</a>
+    <a href="#">Privacy</a>
+</nav>
+</footer>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,423 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/*header*/
+
+header {
+    background: #444545;
+    color: #fff;
+    padding: 20px;
+    
+}
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 40px;
+    
+    float: left;
+}
+
+
+nav img{
+    justify-content: left;
+    float: left;
+}
+nav ul {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    margin-top: 10px;
+    margin-right: 50px;
+    gap: 25px;
+}
+
+nav a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: #ffbb00;
+}
+
+.home{
+    background-color: #444545;
+    margin-top: 5px;
+    padding-bottom: 10%;
+    
+}
+.home-img{
+    width: 300px;
+    float: left;
+    position: relative;
+  animation: moveRight 2s linear infinite;
+  
+}
+
+@keyframes moveRight {
+    0%   { left: 0; }
+  25% { left: 25vw; }       
+  }
+
+.home h1{
+    color: #fff;
+    text-align: right;
+    padding: 40px;
+    align-items: end;
+    padding-right: 15%;
+    font-size: xx-large;
+}
+.home p{
+    color: #fff;
+    text-align: center;
+    align-items: end;
+    padding-left: 50%;
+}
+
+/* pricing section*/
+.table-section{
+    background-color: #f7f7f7;
+}
+#detail{
+    text-align: center;
+    padding: 30px;
+    font-size: xx-large;
+}
+.table{
+    width: 50%;
+    margin-left: 25%;
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+.table th{
+    background-color: #444545;
+    color: #fff;
+}
+.table tr{
+    text-align: center;
+}
+.table img{
+   
+    object-fit: contain;
+}
+
+
+.about{
+    background-color: #f7f7f7;
+}
+
+
+.about-container {
+    max-width: 1100px;
+    margin: auto;
+    width: 100%;
+    align-items: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+} 
+
+  #about{
+    text-align: center;
+    font-size: xx-large;
+    margin: 10px;
+  }
+
+  .about-text{
+    justify-content: flex-start;
+    text-align: left;
+    padding-right: 30%;
+  }
+  .about-image {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+
+  }
+  
+  .about-image img {
+    width: 100%;
+    max-width: 400px;
+   
+  }
+
+  /*card section*/
+
+
+  .card-section{
+    padding: 60px 20px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 50px;
+    
+  }
+  .card-section::before{
+    content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("images/car.jpeg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;             
+  z-index: -1;
+  
+  }
+
+  #service{
+    text-align: center;
+    font-size: xx-large;
+    margin-bottom: 20px;
+  }
+
+  .card-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: stretch;
+    gap: 5px;
+  }
+
+  .card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    width: 40%;
+    background-color: #444545;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin: 50px;
+  }
+
+  .card h3{
+    background-color: #ffbb00;
+    padding: 0%;
+    color: white;
+    border-radius: 20px;
+  }
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+
+  /*booking area*/
+  #book{
+    text-align: center;
+    font-size: xx-large;
+    margin: 20px;
+
+    
+  }
+  .book{
+    border-color: white;
+  }
+
+  form{
+    position: relative;
+    width: 50%;
+    margin-left: 25%;
+  } 
+    .booking-section {
+        position: relative;
+        padding: 60px 20px;
+      }
+      
+      .booking-section::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: #f6b70a;
+        opacity: 0.1;       /* image opacity */
+        z-index: -1;
+      }
+  legend{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+  }
+
+  .form-row{
+    display: flex;
+  align-items: center;
+  margin: 20px;
+  }
+  .form-row label {
+    width: 150px;   /* same label width */
+    font-weight: bold;
+  }
+  
+  .form-row input {
+    flex: 1;        /* input takes remaining space */
+    padding: 8px;
+  }
+  button{
+   width: 50%;
+    text-align: center;
+    margin-left: 25%;
+    margin-top: 10px;
+    background-color: #444545;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+  }
+ button:hover{
+    
+    padding: 10px;
+ }
+
+ .contact{
+    background-color: #444545;
+    color: white;
+    margin-top: 50px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+ }
+#contact{
+    text-align: center;
+    font-size: xx-large;
+}
+footer{
+    background-color: #444545;
+    color: white;
+    padding-left: 20px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN FIX
+   ========================= */
+
+   @media (max-width: 992px) {
+
+    /* HEADER */
+    .main-header {
+      flex-direction: column;
+      align-items: center;
+      
+    }
+  
+    nav ul {
+      margin: 10px 0;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    .logo {
+      width: 60px;
+    }
+  
+    /* HOME SECTION */
+    .home {
+      text-align: center;
+      padding-bottom: 40px;
+    }
+  
+    .home-img {
+      float: none;
+      position: static;
+      animation: none;
+      display: block;
+      margin: 20px auto;
+      width: 200px;
+    }
+  
+    .home h1 {
+      text-align: center;
+      padding: 10px;
+      padding-right: 0;
+    }
+  
+    .home p {
+      padding-left: 0;
+      text-align: center;
+    }
+  
+    /* TABLE */
+    .table {
+      width: 90%;
+      margin: auto;
+    }
+  
+    /* ABOUT */
+    .about-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-text {
+      padding-right: 0;
+    }
+  
+    .about-image {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    /* CARDS */
+    .card-container {
+      flex-direction: column;
+      justify-content: space-around;
+      margin: 50px;
+      
+    }
+  
+    .card {
+      width: 100%;
+      margin: 20px;
+    }
+  
+    /* FORM */
+    form {
+      width: 90%;
+      margin: auto;
+    }
+  
+    .form-row {
+      flex-direction: column;
+      align-items: center;
+      
+
+      
+    }
+  
+    .form-row label {
+      width: auto;
+      margin-bottom: 5px;
+    }
+  
+    button {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    /* CONTACT */
+    .contact,
+    footer {
+      text-align: center;
+      padding: 20px;
+    }
+  }
+  
+  
+
+
+
